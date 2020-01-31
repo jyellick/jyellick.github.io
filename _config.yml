@@ -20,16 +20,25 @@ description: >- # this means to ignore newlines until "baseurl:"
   a permalink home while I do my development.  If you like blockchain,
   consensus, golang, distributed systems, or computer science in general,
   you just might find something useful or interesting here.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://jyellick.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jyellick
 github_username:  jyellick
 
 # Build settings
+lsi: false
+safe: true
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
